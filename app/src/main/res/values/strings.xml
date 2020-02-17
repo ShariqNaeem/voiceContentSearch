@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Voice Content Searcher</string>
+    <string name="hintEt">Type Search Content</string>
+</resources>

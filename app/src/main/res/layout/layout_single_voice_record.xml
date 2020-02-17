@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/marginShort"
+    android:layout_marginTop="@dimen/marginTooShort"
+    android:layout_marginRight="@dimen/marginShort"
+    android:layout_marginBottom="@dimen/marginTooShort"
+    app:cardBackgroundColor="@color/colorPrimaryDark"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutSingle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textViewRecordName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:maxLines="2"
+            android:text="Record"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/btn_Play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_play"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

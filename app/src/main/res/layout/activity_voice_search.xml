@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ubit.VoiceSearchActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/RLSearchText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginShort"
+            android:background="@drawable/bg_edittext"
+            android:elevation="8dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/sTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/hintEt"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:padding="@dimen/marginShort"></EditText>
+
+            <ImageView
+                android:id="@+id/btnMic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/marginShort"
+                android:background="@drawable/ic_mic"></ImageView>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/backward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/marginShort"
+            android:clickable="true"
+            app:backgroundTint="@color/colorAccent"
+            app:elevation="0dp"
+            app:srcCompat="@drawable/ic_backward"
+            tools:ignore="VectorDrawableCompat" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
